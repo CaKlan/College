@@ -11,7 +11,8 @@ div {
 html[color-theme='dark']{
     --menu-background:#201f21;
     --main-background:#302e31;
-    --theme-font-color:white;   
+    --theme-font-color:white;
+    
 }
 
 html[color-theme='light']{
@@ -60,8 +61,8 @@ a,a:visited {color:#f6edff;text-decoration: none;}
 }
 
 .main_contents{
-    margin: 0 0 0 200px;
-    padding: 20px;    
+    margin: 0 0 0 200px;    
+    padding: 20px;
     position:fixed;
     width:100%;
     height:100%;
@@ -69,21 +70,58 @@ a,a:visited {color:#f6edff;text-decoration: none;}
     border-top:1px solid rgb(68, 68, 68);
 }
 
-.sidebar_button{
-    width:200px;
-    height:50px;
+.top_button{
+    width:30px;
+    height:30px;
     display:block;
-    box-sizing:border-box;
-    text-align:center;
-    line-height: 50px;
-    color:var(--theme-font-color) !important;
-    transition: all 0.2s;
+    float:right;
+    cursor: pointer;
+    margin:15px;
 }
 
-.sidebar_button:hover{
+.top_button:hover{
     box-shadow: inset 200px 0 0 0.1px #555555; 
+}
+
+.friend_paper{
+    display:block;
+    width:100%;
+    height:60px;
+    line-height: 60px;
+    float:left;
+    cursor:pointer;
+}
+.friend_paper:hover{
+    box-shadow: inset 200px 0 0 0.1px #555555;
+    
+}
+
+
+.friend_profile{
+    margin-top:15px;
+    margin-left:15px;
+    margin-right:15px;
+    width:30px;
+    height:30px;
 }
 
 label {
     color:var(--theme-font-color);
+}
+
+.friends-dialog{
+    fill: var(--theme-font-color);
+}
+
+.settings-icon{
+    fill: var(--theme-font-color);
+}
+
+.friends-dialog:hover{
+    box-shadow: inset 200px 0 0 0.1px #555555;
+}
+
+.gear-icon{
+    fill: var(--theme-font-color);
+    transform-origin:center;
 }
