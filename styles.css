@@ -8,11 +8,15 @@ div {
     padding: 0;
 }
 
+body:not(.loaded) #slider img{
+    display:none;
+}
+
+
 html[color-theme='dark']{
     --menu-background:#201f21;
     --main-background:#302e31;
-    --theme-font-color:white;
-    
+    --theme-font-color:white; 
 }
 
 html[color-theme='light']{
@@ -68,6 +72,8 @@ a,a:visited {color:#f6edff;text-decoration: none;}
     height:100%;
     background-color:var(--main-background);
     border-top:1px solid rgb(68, 68, 68);
+    
+    
 }
 
 .top_button{
@@ -124,4 +130,22 @@ label {
 .gear-icon{
     fill: var(--theme-font-color);
     transform-origin:center;
+}
+
+canvas {
+    z-index:1;
+}
+.omok_block{
+    width:calc((100vh - 200px) / 14 * 0.97992);
+    height:calc((100vh - 200px) / 14 * 0.97992);
+    
+    
+}
+
+html {
+    height:100%;
+}
+.body_contents{
+    height:100%;
+    overflow: scroll;
 }
